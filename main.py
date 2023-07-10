@@ -42,7 +42,7 @@ async def root():
         padding: 5px;
         margin: 3px;
         background-color: rgba(224, 224, 255, 0.5);
-        height: 16rem;
+        height: 24rem;
         padding: 3rem;
         border
       }
