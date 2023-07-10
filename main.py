@@ -105,7 +105,7 @@ async def root():
     </style>
     <script>
         const client_id = Date.now();
-        var ws = new WebSocket(`ws://localhost:8000/ws/${ client_id }`);
+        var ws = new WebSocket(`wss://multilevel-parking.onrender.com/ws/${ client_id }`);
 
         ws.onmessage = function(event) {
             let response = event.data;
