@@ -24,7 +24,7 @@ async def root():
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script type="text/javascript">
             const client_id = Date.now();
-            var ws = new WebSocket(`ws://multilevel-parking.onrender.com:8000/ws/${ client_id }`);
+            var ws = new WebSocket(`ws://localhost:8000/ws/${ client_id }`);
             
             ws.onmessage = function(event) {
                 p = document.getElementById("message");
