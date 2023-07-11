@@ -151,6 +151,7 @@ async def root():
             
             if(!floorNo) {
               alert('Please enter a valid floor number');
+              return;
             }
 
             ws.send(`CHECK ${ floorNo }`);
