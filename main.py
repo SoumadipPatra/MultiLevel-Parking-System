@@ -331,6 +331,3 @@ async def endpoint(websocket: WebSocket, client_id: int):
         manage.disconnect(websocket)
         await manage.broadcast(f"Client disconnected!")
         
-@app.get('/vitv.png')
-async def vitlogo():
-    return 
