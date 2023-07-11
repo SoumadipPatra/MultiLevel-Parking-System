@@ -172,6 +172,11 @@ async def root():
 
         function calculatePrice() {
             const tokenNo = document.getElementById("tokenNo").value;
+            
+            if(!tokenNo) {
+              alert('Please enter a token number');
+              return;
+            }
 
             ws.send(`LEAVE ${ tokenNo }`);
         }
