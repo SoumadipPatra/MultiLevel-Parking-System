@@ -148,6 +148,10 @@ async def root():
             const floorNo = document.getElementById("floorNo").value;
             
             console.log('Called!')
+            
+            if(!floorNo) {
+              alert('Please enter a valid floor number');
+            }
 
             ws.send(`CHECK ${ floorNo }`);
         }
