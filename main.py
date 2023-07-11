@@ -186,7 +186,7 @@ async def root():
         <div class="col-3">
           <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c5/Vellore_Institute_of_Technology_seal_2017.svg/1200px-Vellore_Institute_of_Technology_seal_2017.svg.png" alt="VIT Logo" width="100" />
         </div>
-        <div class="bg-light col-9">
+        <div class="col-9">
           <h1>MULTILEVEL PARKING SYSTEM</h1>
           <button onclick="scrollToSection('#about')" class="btn btn-primary float-right">About Us</button>
         </div>
