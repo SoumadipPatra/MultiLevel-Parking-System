@@ -118,6 +118,8 @@ async def root():
 
             if(responseList[0] === 'CHECK') {
                 const resultDiv = document.getElementById("result");
+                
+                console.log(resultDiv);
 
                 resultDiv.innerHTML = `
                  <ul>
@@ -154,6 +156,11 @@ async def root():
             var car_number = prompt('Enter the car number!');
             var floor_number = prompt('Enter the floor number!');
             var slot_number = prompt('Enter the slot number!');
+            
+                        
+            const resultDiv = document.getElementById("result");
+            
+            resultDiv.innerHTML = '';
 
             ws.send(`PARK ${ car_number } ${ floor_number } ${ slot_number }`);
         }
@@ -214,22 +221,27 @@ async def root():
     <h2 style="text-align: center; color: rgb(5, 132, 243);"> THE TEAM</h2>
     <div class="team-container">
       <div class="team-member">
+        <img src="https://i1.rgstatic.net/ii/profile.image/11431281173839150-1689066070843_Q128/Soham-Patil-12.jpg" alt="Sid" style="width: 8rem; height 8rem;">
         <h3>Soham Lalitkumar Patil</h3>
         <h4>21BIT0519</h4>
       </div>
       <div class="team-member">
+        <img src="https://i1.rgstatic.net/ii/profile.image/11431281173868359-1689066377951_Q128/Saksham-Garg-14.jpg" alt="Sid" style="width: 8rem; height 8rem;">
         <h3>Saksham Garg</h3>
         <h4>21BIT0272</h4>
       </div>
       <div class="team-member">
+        <img src="https://i1.rgstatic.net/ii/profile.image/11431281173868769-1689067259648_Q128/Aradhya-Sehgal.jpg" alt="Sid" style="width: 8rem; height 8rem;">
         <h3>Aradhya Sehgal</h3>
         <h4>21BIT0188</h4>
       </div>
       <div class="team-member">
+        <img src="https://i1.rgstatic.net/ii/profile.image/11431281173839123-1689065978284_Q128/Soumadip-Patra.jpg" alt="Sid" style="width: 8rem; height 8rem;">
         <h3>Soumadip Patra</h3>
         <h4>21BIT0523</h4>
       </div>
       <div class="team-member">
+        <img src="https://i1.rgstatic.net/ii/profile.image/11431281173872499-1689051278139_Q128/Sidharth-Ghai.jpg" alt="Sid" style="width: 8rem; height 8rem;">
         <h3>Sidharth Ghai</h3>
         <h4>21BIT0527</h4>
       </div>
