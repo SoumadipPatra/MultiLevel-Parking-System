@@ -135,7 +135,7 @@ async def root():
             } else if (responseList[0] === 'LEAVE') {
                 const priceResultDiv = document.getElementById("priceResult");
 
-                priceResultDiv.innerHTML = `The car ${ responseList[1] } is leaving, total bill is Rs. ${ responseList[2] }`;
+                priceResultDiv.innerHTML = `<strong>The car ${ responseList[1] } is leaving, total bill is Rs. ${ responseList[2] }</strong>`;
             } else if (responseList[0] === 'INVALID') {
                 const priceResultDiv = document.getElementById("priceResult");
 
