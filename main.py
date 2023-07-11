@@ -170,21 +170,29 @@ async def root():
 
             ws.send(`LEAVE ${ tokenNo }`);
         }
+        
+        function scrollToSection(sectionId) {
+          const section = document.querySelector(sectionId);
+          if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
     </script>
   </head>
 
   <body>
     <div class="container">
       <div class="row">
-        <div class="col">
+        <div class="col-3">
           <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c5/Vellore_Institute_of_Technology_seal_2017.svg/1200px-Vellore_Institute_of_Technology_seal_2017.svg.png" alt="VIT Logo" width="100" />
         </div>
-        <div class="col text-center">
+        <div class="bg-light col-9">
           <h1>MULTILEVEL PARKING SYSTEM</h1>
+          <button onclick="scrollToSection('#about')" class="btn btn-primary float-right">About Us</button>
         </div>
       </div>
 
-      <div class="row flex-container">
+      <div class="row flex-container mt-5">
         <div class="col-6 box">
           <h3 class="box-title">Check</h3>
           <div class="form-group">
@@ -213,9 +221,6 @@ async def root():
       </div>
     </div>
     <div class ="Aradhya">
-         <div id="myButton">
-    <button onclick="scrollToSection('#about')" class="btn btn-light">About Us</button>
-  </div>
   <br>
   <div  id="about">
     <h2 style="text-align: center; color: rgb(5, 132, 243);"> THE TEAM</h2>
