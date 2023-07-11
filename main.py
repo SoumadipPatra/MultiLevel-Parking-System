@@ -55,9 +55,8 @@ async def root():
         margin-bottom: 5px;
       }
       body {
-        /*background-image: url("https://media.istockphoto.com/id/1186972461/photo/generic-white-car-isolated-on-white-background.webp?b=1&s=170667a&w=0&k=20&c=VWXOQDLvEJHhCihgNnErADBLaG7vpHPM7pryTquiLi8=");
-        background-repeat: no-repeat;*/
-        background-image: url("https://drive.google.com/file/d/101gvKQdGQlBPD4nAAUTgB__YHE3nXeiP/view?usp=sharing");
+        background-image: url("https://media.istockphoto.com/id/1186972461/photo/generic-white-car-isolated-on-white-background.webp?b=1&s=170667a&w=0&k=20&c=VWXOQDLvEJHhCihgNnErADBLaG7vpHPM7pryTquiLi8=");
+        background-repeat: no-repeat;
         background-size: 100%;
       }
       
