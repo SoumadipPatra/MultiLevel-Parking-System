@@ -323,10 +323,12 @@ async def endpoint(websocket: WebSocket, client_id: int):
                         'entry_time': entry_time,
                         'token': token
                     }
-                    response = f'PARK { car_number } {token}'
+                    response1 = f'PARK { car_number } {token}'
+                    response2 = f'EXITSIDE { car_number} { token }'
                 else:
                     response = f'FULL'
                 await manage.send_personal_message(response, websocket)
+                await manage.broadcast_message(response)
             elif request.startswith('LEAVE'):
                 _, token = request.split()
                 exit_time = int(time.time())
