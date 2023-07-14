@@ -327,8 +327,9 @@ async def endpoint(websocket: WebSocket, client_id: int):
                     response2 = f'EXITSIDE { car_number} { token }'
                 else:
                     response = f'FULL'
-                await manage.send_personal_message(response, websocket)
-                await manage.broadcast_message(response)
+                await manage.send_personal_message(response1, websocket)
+                time.sleep(1)
+                await manage.broadcast_message(response2)
             elif request.startswith('LEAVE'):
                 _, token = request.split()
                 exit_time = int(time.time())
